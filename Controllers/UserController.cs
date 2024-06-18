@@ -114,6 +114,7 @@ namespace CRUD_application_2.Controllers
         public ActionResult Delete(int id, FormCollection collection)
         {
             // Implement the Delete method (POST) here
+
             var user = userlist.FirstOrDefault(u => u.Id == id);
             if (user != null)
             {
